@@ -1,0 +1,20 @@
+{
+  "visual": {
+    "name": "customslicer",
+    "displayName": "Custom Slicer",
+    "guid": "customerslicer97590EFAE66C4C5B85AB4C6B5750937D",
+    "visualClassName": "Visual",
+    "version": "1.0.0",
+    "description": "This is part of my training, I made a custom Slicer for PBI using TypeScript",
+    "supportUrl": "mailto:zackgouttel@gmail.com",
+    "gitHubUrl": "https://github.com/zackgouttel"
+  },
+  "apiVersion": "4.7.0",
+  "author": { "name": "Zakaria G", "email": "zackgouttel@gmail.com" },
+  "assets": { "icon": "assets/filter.png" },
+  "externalJS": null,
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": null,
+  "stringResources": []
+}

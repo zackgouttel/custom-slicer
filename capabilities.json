@@ -1,0 +1,111 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Category",
+      "name": "category",
+      "kind": "Grouping"
+    }
+  ],
+  "privileges": [{ "name": "WebAccess" }, { "name": "LocalStorage" }],
+  "objects": {
+    "general": {
+      "displayName": "General",
+      "displayNameKey": "formattingGeneral",
+      "properties": {
+          "filter": {
+              "type": {
+                  "filter": true
+              }
+          }
+      }
+  },
+    "slicerSettings": {
+      "displayName": "Slicer Settings",
+      "properties": {
+        "allSelectedLabel": {
+          "displayName": "All Selected Label",
+          "type": {
+            "text": true
+          }
+        },
+        "defaultColor": {
+          "displayName": "Default color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "selectedColor": {
+          "displayName": "Selected color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "fontFamily": {
+          "displayName": "Font Family",
+          "type": {
+            "formatting":{"fontFamily": true} 
+          }
+        },
+        "fontSize": {
+          "displayName": "Text Size",
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "textAlign":{
+          "displayName": "Text Align",
+          "type": {
+            "formatting":{"alignment":true} 
+          }
+        },
+        "paddingBottom": {
+          "displayName": "Padding (bottom)",
+          "type": {
+            "numeric": true
+          }
+        },
+        "marginBottom":{
+          "displayName": "Margin (bottom)",
+          "type": {
+            "numeric": true
+          }
+        },
+        "underlineWidth":{
+          "displayName": "Underline Width",
+          "type": {
+            "numeric": true
+          }
+        }
+      }
+    }
+  },
+  "dataViewMappings": [
+    {
+      "conditions": [{
+         "category": { "max": 1 } 
+         }],
+      "categorical": {
+        "categories": {
+          "for": {
+            "in": "category"
+          },
+          "dataReductionAlgorithm": {
+            "top": {}
+          }
+        }
+      }
+    }
+  ],
+  "supportsSynchronizingFilterState":true,
+  "suppressDefaultTitle": true
+}
